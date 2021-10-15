@@ -23,6 +23,100 @@
                         <button class="btn btn-sm btn-success">Volver</button>   
                     </div>         
                 </div>
+                <div class="container-fluid py-4 mr-4">
+                    <h3 class="mt-2">Autómata Finito Determinista (AFD)</h3>
+                    <hr>
+                    <div class="row text-center my-4">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <button class="btn btn-sm btn-success">Añadir Estado</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-sm btn-success">Añadir Transición</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <button class="btn btn-sm btn-success">Modificar Estado Final</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-sm btn-danger">Eliminar Autómata</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    
+                    <div class="my-4">
+                        <div>
+                            <form >
+                                <div class="form-group">
+                                    <label for="id">Ingrese el id: </label> 
+                                    <input type="number" min="0" class="form-control"> 
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-success btn-sm" type="submit">Agregar</button>
+                                </div>
+                            </form>       
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="id">Ingrese el id: </label> 
+                                    <input type="number" min="0" class="form-control"> 
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-success btn-sm" type="submit">Agregar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <form>
+                            <div class="form-group">
+                                <label>Ingrese el id del estado inicial de la transición:</label>
+                                <input type="number" min="0" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                <label>Ingrese el id del estado final de la transición:</label>
+                                <input type="number" min="0" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                <label>Ingrese carácter de la transición: </label>
+                                <input type="text" minlength="1" maxlength="1" class="form-control">
+                            </div>
+                    
+                            <button class="btn btn-success btn-sm" type="submit" >Agregar</button>
+                        </form>
+
+                        <form>
+                            <div class="form-group">
+                                <label>Ingrese el id del estado inicial de la transición:</label>
+                                <input type="number" min="0" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                <label>Ingrese el id del estado final de la transición:</label>
+                                <input type="number" min="0" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                <label>Ingrese carácter de la transición: </label>
+                                <input type="text" minlength="1" maxlength="1" class="form-control">
+                            </div>
+                    
+                            <button class="btn  btn-success btn-sm" type="submit" >Agregar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 my-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Ingrese la palabra: </label>
+                                <input type="text" class="form-control">
+                            </div>
+                         <button class="btn btn-sm btn-success" type="submit" >Consultar Palabra</button>
+                        </form>
+                    </div>
+                </div>
                
             </div>
             
