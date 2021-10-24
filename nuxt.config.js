@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
   head: {
     title: 'trabajo_grafos_2',
     htmlAttrs: {
@@ -22,7 +23,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: "~/plugins/vis-network", mode: "client"}
+    {
+      src: "~/plugins/vis-network", mode: "client",
+      src: "~/plugins/swal", mode: "client",
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,7 +42,4 @@ export default {
     'bootstrap-vue/nuxt',
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
 }
